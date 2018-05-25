@@ -1,5 +1,5 @@
 body {
-  background: #1466b8;
+  background: #00c895;
 }
 
 .index-form {
@@ -52,3 +52,35 @@ body {
   will-change: opacity, transform;
   transition: all .3s ease-out;
 }
+
+.application-header {
+  background-color: white;
+}
+
+nav {
+
+  background-color: white;
+}
+
+nav ul.left{
+  padding-left: 250px;
+}
+
+nav ul a {
+  color: black;
+}
+
+nav ul li.active {
+  background-color: rgba(0,200,150,1);
+}
+
+
+nav ul li:hover {
+  background-color: rgb(155, 250, 226);
+}
+
+
+.logo:hover {
+  background-color: transparent;
+ }
+

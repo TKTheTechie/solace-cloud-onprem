@@ -1,9 +1,16 @@
 <template bindable="router">
-  <nav>
-    <ul>
-      <li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
+  <div class="application-header">
+  <div class="container">
+   <nav class="application-nav">
+      <a href="/services" class="brand-logo" height="38px" width="190px">
+        <img src="../../../static/solace-cloud-on-prem-logo.png" height="38px" width="190px">
+      </a>
+      <ul class="left">
+         <li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
         <a href.bind="row.href">${row.title}</a>
       </li>
     </ul>
   </nav>
+ </div>
+</div>
 </template>
