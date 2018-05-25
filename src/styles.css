@@ -1,0 +1,54 @@
+body {
+  background: #1466b8;
+}
+
+.index-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    padding: 80px 50px 10px 50px;
+    background: white;
+    min-height: 100vh;
+    z-index: 1;
+}
+
+.index-form .logo {
+  margin-bottom: 50px;
+  margin-left: -10px;
+}
+
+.index-form .logo img {
+  width: 310px;
+  height: 60px;
+}
+
+.button {
+  margin-top:30px;
+  height: 50px;
+  border-radius: 25px;
+  color: white;
+  border: none;
+  font-size: 18px;
+  background: linear-gradient(to right, #22b8f8, #0875c6);
+  line-height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width:300px;
+}
+
+.waves-effect {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
+  will-change: opacity, transform;
+  transition: all .3s ease-out;
+}

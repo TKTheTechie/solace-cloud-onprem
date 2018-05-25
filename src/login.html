@@ -1,0 +1,28 @@
+<template>
+  <require from="styles.css"></require>
+
+  <div class="index-form">
+    <div class="logo">
+      <img src="../static/solace-cloud-on-prem-logo.png">
+    </div>
+
+    <form class="col s12">
+   
+      <div class="input-field">
+      <input id="md-input-0" type="text" class="validate">
+      <label  for="md-input-0">
+        Email
+      </label> 
+      </div>
+       
+      <div class="input-field">
+        <input ref="input" id="md-input-1" type="password" step="any">
+        <label ref="label" for="md-input-1">
+          Password
+        </label> 
+      </div>
+
+    <button md-button="" md-waves="color: light;" id="login-button" class="button au-target btn accent waves-effect waves-light" type="button" click.trigger="login()" au-target-id="156">Sign in</button>
+  </form>
+  </div>
+</template>
