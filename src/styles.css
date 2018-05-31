@@ -1,6 +1,14 @@
 body {
   background: #00c895;
+  font-family: "Rubik", sans-serif;
 }
+
+h1 {
+  display: block;
+  margin: 1rem 0 0 0;
+  font-size: 2.2rem;
+}
+
 
 .index-form {
     position: fixed;
@@ -53,6 +61,16 @@ body {
   transition: all .3s ease-out;
 }
 
+.section-header {
+    height: 80px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #3df5c7;
+    display: block;
+    color: white;
+    min-width: 650px;
+}
+
 .application-header {
   background-color: white;
 }
@@ -60,6 +78,8 @@ body {
 nav {
 
   background-color: white;
+  box-shadow: 0 0 0 0;
+  -webkit-box-shadow: 0 0 0 0;
 }
 
 nav ul.left{
