@@ -1,0 +1,24 @@
+<template>
+    <require from="../../resources/elements/section-header.html"></require>
+   
+    <section-header class="section-header" section-title="My Services"></section-header>
+
+    <div class="center-container">
+      <div class="container">
+          <div repeat.for="service of services" class="service-card">
+              <div class="name">${service.name}</div>
+              <div class="application"><i class="medium material-icons">${service.icon}</i><div class="name">${service.application_name}</div></div>
+              <div class="host">Host: ${service.device_name}</div>
+              <div class="service-status">
+                <div class="status-item good" style="float:left;">Running</div><div class="status-item good" style="float: right">Spool 15% Full</div>
+              </div>
+            </div>
+            <div class="service-card" click.trigger="createService()">
+              <div class="create">+</div>
+            </div>
+      </div>
+    </div>
+
+
+    
+</template>

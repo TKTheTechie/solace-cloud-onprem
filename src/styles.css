@@ -82,11 +82,16 @@ nav {
   -webkit-box-shadow: 0 0 0 0;
 }
 
+.brand-logo img {
+  margin-top: 10px;
+}
+
 nav ul.left{
   padding-left: 250px;
 }
 
 nav ul a {
+  font-weight: 475;
   color: black;
 }
 
@@ -104,3 +109,176 @@ nav ul li:hover {
   background-color: transparent;
  }
 
+ .plan {
+ box-shadow: 0px 0px 0px 3px #3df5c7;
+ }
+
+ .service-card {
+  float: left;
+  background: white;
+  color: rgba(0, 0, 0, 0.4);
+  line-height: 25px;
+  width: 235px;
+  min-width: 220px;
+  position: relative;
+  border-radius: 5px;
+  padding: 12px;
+  height: 225px;
+  margin: 10px;
+  margin-bottom: 30px;
+  transition: margin-top 100ms;
+}
+
+.service-card .create {
+  padding-top: 75px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 200px;
+}
+
+.service-card .application {
+  text-align: center;
+}
+
+.service-card:hover {
+  box-shadow: 3px 3px #3df5c7;
+}
+
+.service-card .application .name {
+  vertical-align: top;
+  font-weight: bold;
+}
+
+.service-card .service-status {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f5f5f5;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 0 2px;
+  font-size: 12px;
+}
+
+.service-card .host {
+  padding-top: 15px;
+}
+
+
+
+.service-card .service-status .status-item.good:before {
+  content: " ";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
+  background-color: #7ed321;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-top: -3px;
+}
+
+.inner-section {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-left: 30px;
+    max-width: 1140px;
+}
+
+.tile-form {
+  height: 100%;
+  
+  margin-bottom: 50px;
+  margin-top: 25px;
+  min-width:500px;
+  max-width: 1140px;
+  position: relative;
+  
+}
+
+.number-box {
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: #474747;
+    text-align: center;
+    margin: auto 20px auto 0;
+    padding-top: 5px;
+    border-radius: 5px;
+}
+
+.tile-form .step {
+  display: flex;
+  position: relative;
+  margin: auto 0;
+  height: 40px;
+}
+
+.tile-form .plans {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile-form .step-content {
+  padding-left: 32px !important;
+  margin-left: 15px;
+  border-left: 2px solid rgba(0, 0, 0, 0.25);
+  padding-bottom: 20px;
+}
+
+
+.tile-form .plan {
+    margin-bottom: 10px;   
+    margin-left: 15px;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 20px;
+    font-weight: 300;
+    width: 195px;
+    height: 192px;
+    display: flex;
+    flex-direction: row;
+    background: white;
+    position: relative;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.details{
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 24px;
+  height: 100%;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.details .plan-name {
+  display: inline-flex;
+  align-items: flex-end;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.plans .input-email {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: white;
+}
+
+.request-button {
+  margin-top:0px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 15px;
+  line-height: 0px;
+  height: 40px;
+  width: 158px;
+}

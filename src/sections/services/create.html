@@ -1,0 +1,52 @@
+<template>
+    <require from="../../resources/elements/section-header.html"></require>
+    <section-header class="section-header" section-title="Create Service"></section-header>
+    <section class="inner-section">
+      <div class="tile-form">
+        <div class="col l12 s12 step">
+          <div class="number-box">1</div>
+          <span class="title">Select Service Plan</span>
+        </div>
+        <div class="col l12 s12 plans step-content">
+        <div repeat.for="plan of plan_templates" class="plan">
+          <div class="details">
+            <div class="plan-name">${plan.name}</div>
+            <div class="plan-details"><div><span class="value">${plan.connections}</span> Connections</div></div>
+            <div class="plan-details"><div><span class="value">${plan.spool_size}MB</span></div>
+          </div>
+        </div>  
+        </div>
+        <div class="plan">
+            <div class="details">
+              <div class="plan-name">Custom</div>
+              <div class="plan-details">Customize your service details</div>
+            </div>
+        </div> 
+      </div>
+      <div class="col l12 s12 step">
+          <div class="number-box">2</div>
+          <span class="title">Specify your approver email</span>
+      </div>
+      <div class="col l12 s1 plans step-content">
+        <div class="details">
+          <div class="field">
+              <form class="col s12">
+                  <div class="input-field">
+                      <input id="md-input-0" type="text" class="validate input-email">
+                      <label  for="md-input-0">
+                        Email
+                      </label> 
+                  </div>
+              </form>
+          </div>
+        </div>
+      </div>
+      <div class="col l12 s12 step">
+          <div class="number-box">3</div>
+          <button md-waves="color: light;" class="button waves-effect waves-light request-button" id="request-button">
+              Request Access
+          </button>
+      </div>
+      </div>
+    </section>
+</template>
