@@ -1,0 +1,43 @@
+<template>
+  <require from="../../../resources/elements/section-header.html"></require>
+  <section-header class="section-header" section-title="Create Service"></section-header>
+  <section class="inner-section">
+    <div class="tile-form">
+      <div class="col l12 s12 step">
+        <span class="title">Customize Your Service</span>
+      </div>
+      <div class="col l12 s12 plans step-content">
+        <div class="details">
+
+          <div class="input-field">
+            <label  for="md-input">
+              Your Service Name
+            </label> 
+            <input id="md-input" type="text" class="validate" value.bind="plan.vpnName">
+          </div>
+    
+          <div class="input-field">
+            <label  for="md-input">
+              Connections
+            </label> 
+            <input id="md-input" type="number" step=1 class="validate number-box" value.bind="plan.maxConnections">
+          </div>
+            
+          <div class="input-field">
+            <label  for="md-input">
+              Message-Spool Size (in MB)
+            </label> 
+            <input id="md-input" type="number" step=1 class="validate number-box" value.bind="plan.maxSpool">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col l12 s12 step">
+        <button md-waves="color: light;" class="button waves-effect waves-light request-button" id="request-button" click.delegate="next()">
+            Review
+        </button>
+    </div>
+    </div>
+  </section>
+</template>

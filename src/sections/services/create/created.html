@@ -1,0 +1,26 @@
+<template>
+  <require from="../../../resources/elements/section-header.html"></require>
+  <section-header class="section-header" section-title="Create Service"></section-header>
+  <section class="inner-section">
+
+    <div class="tile-form">
+      <div class="col l12 s12">
+        <span class="title"><a href="${solAdminMsgVpnsUrl}">Manage your Solace Msg-VPN</a></span>
+      </div>
+    </div>
+
+    <div class="tile-form">
+      <div class="col l12 s12">
+        <span class="title">SEMP Request:</span>
+        <p><textarea rows=11 cols=50 value.bind="createdParams.sempRequest"></textarea></p>
+      </div>
+    </div>
+
+    <div class="tile-form">
+      <div class="col l12 s12">
+        <span class="title">SEMP Response:</span>
+        <p><textarea rows=11 cols=50 value.bind="createdParams.sempResponse"></textarea></p>
+      </div>
+    </div>
+  </section>
+</template>

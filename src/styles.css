@@ -109,9 +109,13 @@ nav ul li:hover {
   background-color: transparent;
  }
 
- .plan {
- box-shadow: 0px 0px 0px 3px #3df5c7;
+ .plan:hover {
+ box-shadow: 0px 0px 0px 4px #0f9e7a;
  }
+
+ .selectedPlan{
+  box-shadow: 0px 0px 0px 4px #0f9e7a;
+}
 
  .service-card {
   float: left;
@@ -244,6 +248,7 @@ nav ul li:hover {
     position: relative;
     border-radius: 10px;
     align-self: center;
+    cursor: pointer;
 }
 
 .details{

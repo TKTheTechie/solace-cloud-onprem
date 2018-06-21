@@ -13,7 +13,7 @@ export class Services {
   }
 
   createService(){
-    this.router.navigate('services/create');
+    this.router.navigate('services/create/select');
   }
  
 }

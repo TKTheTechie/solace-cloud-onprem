@@ -1,0 +1,63 @@
+<template>
+  <require from="../../../resources/elements/section-header.html"></require>
+  <section-header class="section-header" section-title="Create Service"></section-header>
+  <section class="inner-section">
+
+    <div class="tile-form">
+      <div class="col l12 s12">
+        <span class="title">Review Your Service Definition</span>
+        <p><textarea id="md-input-1" rows=11 value.bind="sempJson"></textarea></p>
+      </div>
+    </div>
+    
+
+    <div class="tile-form">
+      <div class="col l12 s12">
+        <label for="md-input-2">
+            <span class="title">Destination Solace Router</span>
+        </label>
+        <select id="md-input-2" value.bind="selectedSempConfig">
+          <option model.bind="null">Choose...</option>
+          <option repeat.for="semp of systemSempConfigs" model.bind="semp.id">${semp.url}</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="ad-hoc-semp-config" class="tile-form" show.bind="selectedSempConfig == systemSempConfigs.length">
+      <div class="input-field">
+        <label  for="md-input-3">
+          URL
+        </label> 
+        <input id="md-input-3" type="text" class="validate" value.bind="customSempConfig.url">
+      </div>
+
+      <div class="input-field">
+        <label  for="md-input-4">
+          Admin User
+        </label> 
+        <input id="md-input-4" type="text" class="validate" value.bind="customSempConfig.adminUser">
+      </div>
+
+      <div class="input-field">
+        <label  for="md-input-5">
+          Admin User
+        </label> 
+        <input id="md-input-5" type="password" class="validate" value.bind="customSempConfig.adminPassword">
+      </div>
+    </div>
+
+    <div class="tile-form">
+      <div class="col l12 s12">
+        <button md-waves="color: light;" 
+          id="request-button" 
+          class="button waves-effect waves-light request-button" 
+          click.delegate="next()" disabled.bind="selectedSempConfig <= 0">
+          PROVISION
+        </button>
+      </div>
+    </div>
+
+
+</section>
+
+</template>

@@ -1,5 +1,5 @@
 <template>
-    <require from="../../resources/elements/section-header.html"></require>
+    <require from="../../../resources/elements/section-header.html"></require>
     <section-header class="section-header" section-title="Create Service"></section-header>
     <section class="inner-section">
       <div class="tile-form">
@@ -8,15 +8,15 @@
           <span class="title">Select Service Plan</span>
         </div>
         <div class="col l12 s12 plans step-content">
-        <div repeat.for="plan of plan_templates" class="plan">
+        <div repeat.for="plan of plan_templates" class="plan ${selectedPlanName==plan.name?'selectedPlan':''}" click.delegate="selectPlan(plan.name)">
           <div class="details">
             <div class="plan-name">${plan.name}</div>
-            <div class="plan-details"><div><span class="value">${plan.connections}</span> Connections</div></div>
-            <div class="plan-details"><div><span class="value">${plan.spool_size}MB</span></div>
+            <div class="plan-details"><div><span class="value">${plan.maxConnections}</span> Connections</div></div>
+            <div class="plan-details"><div><span class="value">${plan.maxSpool}MB Spool</span></div>
           </div>
         </div>  
         </div>
-        <div class="plan">
+        <div  click.delegate="selectPlan('custom')"  class="plan ${selectedPlanName=='custom'?'selectedPlan':''}" >
             <div class="details">
               <div class="plan-name">Custom</div>
               <div class="plan-details">Customize your service details</div>
@@ -32,8 +32,8 @@
           <div class="field">
               <form class="col s12">
                   <div class="input-field">
-                      <input id="md-input-0" type="text" class="validate input-email">
-                      <label  for="md-input-0">
+                      <input id="md-input-0" type="text" class="validate input-email" style="box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); border: 1px solid #dddddd; border-radius: 5px; display: inline-block; background-color:white">
+                      <label  for="md-input-0" style="color:black">
                         Email
                       </label> 
                   </div>
@@ -43,8 +43,8 @@
       </div>
       <div class="col l12 s12 step">
           <div class="number-box">3</div>
-          <button md-waves="color: light;" class="button waves-effect waves-light request-button" id="request-button">
-              Request Access
+          <button md-waves="color: light;" class="button waves-effect waves-light request-button" id="request-button" click.delegate="next()">
+              Next >>
           </button>
       </div>
       </div>
