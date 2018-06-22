@@ -7,27 +7,27 @@
         <span class="title">Customize Your Service</span>
       </div>
       <div class="col l12 s12 plans step-content">
-        <div class="details">
+        <div class="details" style="background-color:white">
 
           <div class="input-field">
             <label  for="md-input">
               Your Service Name
             </label> 
-            <input id="md-input" type="text" class="validate" value.bind="plan.vpnName">
+            <input id="md-input" type="text" class="validate" value.bind="plan.vpnName" >
           </div>
     
-          <div class="input-field">
-            <label  for="md-input">
+          <div class="input-field inline">
+            <label  for="md-input" class="active">
               Connections
             </label> 
-            <input id="md-input" type="number" step=1 class="validate number-box" value.bind="plan.maxConnections">
+            <input id="md-input" type="number" step=1 class="validate number-box number-input" value.bind="plan.maxConnections">
           </div>
             
-          <div class="input-field">
-            <label  for="md-input">
+          <div class="input-field inline">
+            <label  for="md-input" class="active">
               Message-Spool Size (in MB)
             </label> 
-            <input id="md-input" type="number" step=1 class="validate number-box" value.bind="plan.maxSpool">
+            <input id="md-input" type="number" step=1 class="validate number-box number-input" value.bind="plan.maxSpool">
           </div>
 
         </div>
